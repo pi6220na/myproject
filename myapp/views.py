@@ -17,7 +17,7 @@ def list(request):
             newdoc.save()
 
             # Redirect to the document list after POST
-            return HttpResponseRedirect(reverse('list'))
+            return HttpResponseRedirect(reverse('myapp:list'))
     else:
         form = DocumentForm() # A empty, unbound form
 
